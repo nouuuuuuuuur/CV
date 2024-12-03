@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Complet HAFSI NORHAN G2 e-bu</title>
+</head>
+<body>
+  <form method="post" action="traitement.html">
+    <!-- Texte mono-ligne -->
+    <p>
+      <label for="nom">Votre nom :</label>
+      <input type="text" name="nom_user" id="nom" placeholder="Entrez votre nom" maxlength="50" />
+    </p>
+
+    <!-- Texte multi-ligne -->
+    <p>
+      <label for="comment">Vos commentaires :</label><br />
+      <textarea name="comment" id="comment" rows="6" cols="40" placeholder="Écrivez vos commentaires ici"></textarea>
+    </p>
+
+    <!-- Cases à cocher -->
+    <p>
+      Cochez les villes que vous voulez visiter :<br />
+      <input type="checkbox" id="turquie" name="villes[]" value="turquie" />
+      <label for="turquie">Turquie</label><br />
+      <input type="checkbox" id="chine" name="villes[]" value="chine" />
+      <label for="chine">Chine</label><br />
+      <input type="checkbox" id="indonesie" name="villes[]" value="indonesie" />
+      <label for="indonesie">Indonésie</label><br />
+      <input type="checkbox" id="tunisie" name="villes[]" value="tunisie" />
+      <label for="tunisie">Tunisie</label>
+    </p>
+
+    <!-- Zones d'options -->
+    <p>
+      Veuillez indiquer votre spécialité :<br />
+      <input type="radio" name="spec" id="audit" value="audit" />
+      <label for="audit">Audit et contrôle de gestion</label><br />
+      <input type="radio" name="spec" id="business" value="business" />
+      <label for="business">E-Business</label><br />
+      <input type="radio" name="spec" id="com" value="com" />
+      <label for="com">Commerce international</label>
+    </p>
+
+    <!-- Liste déroulante -->
+    <p>
+      <label for="wilaya">Dans quelle wilaya habitez-vous ?</label>
+      <select name="wilaya" id="wilaya">
+        <option value="alger">Alger</option>
+        <option value="oran">Oran</option>
+        <option value="skikda">Skikda</option>
+        <option value="laghouat">Laghouat</option>
+      </select>
+    </p>
+
+    <!-- Boutons d'envoi et de réinitialisation -->
+    <p>
+      <input type="submit" value="Envoyer" />
+      <input type="reset" value="Réinitialiser" />
+    </p>
+  </form>
+</body>
+</html>
